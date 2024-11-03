@@ -12,13 +12,13 @@ n_letters = int(input("How many letters do you want?\n"))
 n_numbers =  int(input("How many numbers do you want?\n"))
 n_symbols = int(input("How many symbols do you want?\n"))
 
-for char in range(1, n_letters + 1):
+for char in range(0, n_letters):
     password.append(random.choice(letters))
 
-for char in range(1, n_numbers + 1):
+for char in range(0, n_numbers):
     password.append(random.choice(numbers))
 
-for char in range(1, n_symbols + 1):
+for char in range(0, n_symbols):
     password.append(random.choice(symbols))
 
 random.shuffle(password)
