@@ -16,4 +16,14 @@ def set_difficulty(difficulty_level):
 
 set_difficulty(difficulty_level)
 
-number = input("Make a Guess: ")
+number = int(input("Make a Guess: "))
+
+if number > answer:
+    print("Too High")
+    print("Guess again")
+elif number < answer:
+    print("Too Low")
+    print("Guess again")
+else:
+    print("Invalid input")
+
